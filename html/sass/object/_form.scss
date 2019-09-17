@@ -3,7 +3,6 @@
   margin: 0 auto;
   padding-top: 30px;
   padding-bottom: 30px;
-  // background-color: #ebf4f5;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -24,7 +23,7 @@
   }
 
   &__form {
-    margin: 50px 0 40px;
+    margin: 30px 0 40px;
     display: flex;
     justify-content: center;
 
@@ -37,64 +36,61 @@
       margin-bottom: 20px;
     }
 
+    .name,
+    .email {
+      margin-top: 10px;
+      display: block;
+      height: 50px;
+      width: 400px;
+      box-sizing: border-box;
+      font-size: 16px;
+      padding-left: 20px;
+      border-radius: 40px;
+      outline: none;
+    }
+    &--left {
+      margin-right: 50px;
+    }
+
+    &--inquiry {
+      display: block;
+      margin-top: 10px;
+      padding: 10px 40px 0 40px;
+      height: 150px;
+      width: 400px;
+      box-sizing: border-box;
+      font-size: 16px;
+      border-radius: 40px;
+      outline: none;
+    }
+
+
   }
 
+  button {
+    font-family: 'Shadows Into Light', cursive;
+    background-color: #ffffff;
+    color: rgb(70, 68, 68);
+    border: 1px solid rgb(82, 82, 82);
+    border-radius: 40px;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 50px;
+    box-sizing: border-box;
+    transition: all .8s ease;
+    -webkit-transition: all .8s ease;
+  }
 
-}
+  button:hover {
+    cursor: pointer;
+    background-color:rgba(2, 39, 250, 0.767);
+    color: #fff;
+    transition: color .8s linear;
+    -webkit-transition: color .3s linear;
+    overflow: hidden;
+    text-transform: uppercase;
 
+  }
 
-
-
-.form .name,
-.form .email {
-  margin-top: 10px;
-  display: block;
-  height: 50px;
-  width: 400px;
-  box-sizing: border-box;
-  font-size: 16px;
-  padding-left: 20px;
-  border-radius: 40px;
-  outline: none;
-}
-
-.form-left {
-  margin-right: 50px;
-}
-
-.form .inquiry {
-  display: block;
-  margin-top: 10px;
-  padding: 10px 40px 0 40px;
-  height: 150px;
-  width: 400px;
-  box-sizing: border-box;
-  font-size: 16px;
-  border-radius: 40px;
-  outline: none;
-}
-
-.contact button {
-  font-family: 'Shadows Into Light', cursive;
-  background-color: #ffffff;
-  color: rgb(70, 68, 68);
-  border: 1px solid rgb(82, 82, 82);
-  border-radius: 40px;
-  font-size: 30px;
-  font-weight: bold;
-  padding: 5px 50px;
-  box-sizing: border-box;
-  transition: all .8s ease;
-  -webkit-transition: all .8s ease;
-}
-
-.contact button:hover {
-  cursor: pointer;
-  background-color:#9dd8ee;
-  color: #fff;
-  transition: color .8s linear;
-  -webkit-transition: color .3s linear;
-  overflow: hidden;
-  text-transform: uppercase;
 
 }
