@@ -1,0 +1,69 @@
+.main {
+  width: $pcw;
+  margin: 0 auto;
+  position: relative;
+  animation: fadeIn 3s ease;
+
+  @keyframes fadeIn {
+    0% {
+        opacity: 0;
+        top: 100px;
+    }
+    100% {
+        opacity: 1;
+        top: 0;
+    }
+  }
+
+  &__profile {
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+    margin-top: 30px;
+    position: relative;
+    animation: fadeIn 3s ease;
+
+    @keyframes fadeIn {
+      0% {
+          opacity: 0;
+          top: 100px;
+      }
+      100% {
+          opacity: 1;
+          top: 0;
+      }
+    }
+  }
+
+  &__info{
+    width: 100%;
+    display: flex;
+
+    &--photo {
+      img {
+        border-radius: 40px;
+        box-shadow: 10px 10px 12px 12px rgba(50, 50, 50, 0.75);
+      }
+    }
+
+    &--detailes{
+      font-family: serif;
+      color:black;
+      font-size: 1.2em;
+      line-height: 1.5;
+      text-align: left;
+      padding: 20px 0;
+      margin: 0 40px;
+      a {
+        font-family: serif;
+        color: black;
+      }
+    }
+  }
+
+}
+
+.skill{
+  width: $pcw;
+  margin: 0 auto;
+}

@@ -1,0 +1,16 @@
+.footer {
+  width: $pcw;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  background-color: #9dd8ee;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 0;
+  align-items: center;
+
+  &__right {
+    margin-right: 80px;
+    font-size: 30px;
+  }
+}

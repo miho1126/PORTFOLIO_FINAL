@@ -1,0 +1,127 @@
+/* ボタン　詳細 */
+.buttonChest {
+  top: 20px;
+  position: relative;
+  list-style: none;
+  display: block;
+  width: 100%;
+  padding-bottom: 60px;
+}
+
+.buttonChest li {
+  display: inline-block;
+  position: relative;
+  min-height: 80px;
+  margin: 30px;
+  -webkit-transition: all .4s;
+  -moz-transition: all .4s;
+  transition: all .4s;
+}
+
+.logo img{
+  width: 200px;
+  margin: 0;
+  border-radius: 5px;
+}
+
+.logo2 img{
+  height: 150px;
+  margin: 0;
+}
+
+.buttonChest li .click {
+  font-size: 1.5em;
+  position: absolute;
+  text-align: center;
+  color: #4d4d4d;
+  text-transform: uppercase;
+  width: 100%;
+  top: 15px;
+  z-index: -1;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.buttonChest li:hover .click {
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  background: #fff;
+  top: 75px;
+  position: absolute;
+  padding-top: 4px;
+  padding-bottom: 5px;
+}
+
+.buttonChest li:hover {
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-transform: scale(0.9) rotate(3deg);
+  -moz-transform: scale(0.9) rotate(3deg);
+  -ms-transform: scale(0.9) rotate(3deg);
+  -o-transform: scale(0.9) rotate(3deg);
+  transform: scale(0.9) rotate(3deg);
+}
+
+.button2 {
+  font-size: 2em;
+  color: #fff;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 15px 50px 15px 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 5px 0 rgba(50, 50, 50, 0.75);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.button2:hover {
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  box-shadow: none;
+  border-bottom: solid 8px #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.navy {
+  background: #2c3e50;
+}
+
+.red {
+  background: #e74c3c;
+}
+
+.ocean {
+  background: #3498db;
+}
+
+.api {
+  background: #2980b9;
+}
+
+.chalk {
+  background: #ecf0f1;
+  color: #4d4d4d;
+}
+
+.drab {
+  background: #3f4036;
+}
+
+.teal {
+  background: #8da681;
+}
+
+.jason {
+  background: #bf2806;
+}
+
+.darkRed {
+  background: #8c1d04;
+}
+/* ボタン　詳細終わり */
