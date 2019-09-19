@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/style.css">
   <title>Introdece Myself</title>
 </head>
@@ -13,12 +16,12 @@
   <!-- header -->
   <header>
     <div class="header">
-      <h1 class="header__name"><strong>MIHO FUKUDOME</strong></h1>
+      <h1 class="header__name tlt" data-in-effect="fadeInDown" data-in-shuffle="true"><strong>MIHO FUKUDOME</strong></h1>
       <nav class="header__nav">
         <ul>
-          <li><a href="#"><span>A</span><span>B</span><span>O</span><span>U</span><span>T</span><span>M</span><span>E</span></a>
-          </li>
           <li><a href="#SKILL"><span>S</span><span>K</span><span>I</span><span>L</span><span>L</span><span>S</span></a>
+          </li>
+          <li><a href="#WORKS"><span>W</span><span>O</span><span>R</span><span>K</span><span>S</span></a>
           </li>
           <li><a href="#CONTACT"><span>C</span><span>O</span><span>N</span><span>T</span><span>A</span><span>C</span><span>T</span></a>
           </li>
@@ -31,7 +34,7 @@
   <main>
     <!-- プロフィール紹介ここから -->
     <div class="main">
-      <h2 class="main__profile">PROFILE</h2>
+      <h2 class="main__profile">- PROFILE -</h2>
       <div class="main__info">
         <div class="main__info--photo">
           <img src="img/me1.jpg" alt="自分" width="350" height="450">
@@ -54,6 +57,8 @@
             趣味：旅行（国内、海外）、異文化交流、愛について語り合う
             <br>
             海外旅行経験：ひとり旅多め（韓国、イタリア、イギリス、フランス、台湾、タイ、シンガポール、イスラエル、フィリピン、中国）
+            <br>
+            旅友募集中。次回は、ヨーロッパの電車周遊旅を計画中。
           </p>
         </div>
       </div>
@@ -62,25 +67,23 @@
 
     <!-- 習った言語　 -->
     <div class="skill ">
-      <h3><a id="SKILL">SKILL</a></h4>
-        <div class="skill__swiper swiper-container">
-          <ul class="swiper-wrapper">
-            <li class="swiper-slide"><i class="fab fa-html5"></i></li>
-            <li class="swiper-slide"><i class="fab fa-css3-alt"></i></li>
-            <li class="swiper-slide">
-              <ion-icon name="logo-nodejs"></ion-icon>
-            </li>
-            <li class="swiper-slide"><i class="fab fa-sass"></i></li>
-            <li class="swiper-slide"><i class="fab fa-gulp"></i></li>
-            <li class="swiper-slide"><i class="fab fa-github"></i></li>
-            <li class="swiper-slide"><i class="fab fa-php"></i></li>
-            <li class="swiper-slide"><i class="fab fa-wordpress"></i></li>
-          </ul>
-          <div class="swiper-pagination"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-scrollbar"></div>
-        </div>
+      <h3><a id="SKILL">SKILLS</a></h3>
+      <div class="skill__swiper swiper-container">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide"><i class="fab fa-html5"></i></li>
+          <li class="swiper-slide"><i class="fab fa-css3-alt"></i></li>
+          <li class="swiper-slide"><i class="fab fa-js-square"></i>
+          </li>
+          <li class="swiper-slide"><i class="fab fa-sass"></i></li>
+          <li class="swiper-slide"><i class="fab fa-gulp"></i></li>
+          <li class="swiper-slide"><i class="fab fa-github"></i></li>
+          <li class="swiper-slide"><i class="fab fa-php"></i></li>
+          <li class="swiper-slide"><i class="fab fa-wordpress"></i></li>
+          <li class="swiper-slide"><i class="fab fa-bootstrap"></i></li>
+        </ul>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
     </div>
     <!-- 習った言語　 -->
 
@@ -88,10 +91,22 @@
     <div class="product">
       <h4>作品集</h4>
       <div class="product__art">
-        <div><a href="https://nihonnohinata.netlify.com">https://nihonnohinata.netlify.com</a></div>
-        <div><a href="https://okinawaweather.netlify.com">https://okinawaweather.netlify.com</a></div>
+        <div class="product__art--card">
+          <a data-fancybox="gallery" href="img/nihonnohinatabig.png"><img src="img/nihonnohinatahalf.png"></a>
+          <div class="product__art--word"><a href="https://nihonnohinata.netlify.com">ふるさと紹介</a></div>
+          <p></p>
+        </div>
+        <div class="product__art--card">
+          <a data-fancybox="gallery" href="img/weatherbig.png"><img src="img/weatherbig.png"></a>
+          <div class="product__art--word"><a href="https://okinawaweather.netlify.com">共同制作：<br>お天気ウェブ</a></div>
+          <p></p>
+        </div>
+        <div class="product__art--card">
+          <a data-fancybox="gallery" href="img/teamnorinoribig.png"><img src="img/teamnorinori2.png"></a>
+          <div class="product__art--word"><a href="https://team-norinori.netlify.com/">共同制作：<br>チームノリノリ作品</a></div>
+          <p></p>
+        </div>
       </div>
-
     </div>
 
     <!-- 作品集 -->
@@ -142,9 +157,13 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://kit.fontawesome.com/b8c23dc1e8.js"></script>
 
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 
-  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
+
+  <script src="js/fadein.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

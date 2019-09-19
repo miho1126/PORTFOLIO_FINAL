@@ -1,6 +1,6 @@
 .main {
   width: $pcw;
-  margin: 0 auto;
+  margin: 60px auto 0 auto;
   position: relative;
   animation: fadeIn 3s ease;
 
@@ -17,8 +17,10 @@
 
   &__profile {
     width: 100%;
-    font-size: 35px;
-    margin-top: 30px;
+    font-size: 2.2em;
+    text-shadow:0 2px 2px black;
+    text-align: center;
+    margin: 40px 0 15px 0;
     position: relative;
     animation: fadeIn 3s ease;
 
@@ -37,6 +39,7 @@
   &__info{
     width: 100%;
     display: flex;
+    margin-top: 40px;
 
     &--photo {
       margin-top: 30px;
@@ -47,16 +50,15 @@
     }
 
     &--detailes{
-      font-family: serif;
-      color:black;
+      font-family: 'Sawarabi Gothic';
       font-size: 1.2em;
       line-height: 2;
       text-align: left;
       padding: 20px 0;
       margin-left: 40px;
       a {
-        font-family: serif;
-        color: black;
+        font-family: 'Sawarabi Gothic';
+        color: white;
       }
     }
   }
@@ -65,23 +67,60 @@
 
 .skill{
   width: $pcw;
-  margin: 0 auto;
-  font-size: 2em;
+  margin: 100px auto 0 auto;
+  font-size: 2.2em;
+  h3{
+    text-shadow:0 2px 2px black;
+    margin-top: 50px;
+  }
   &__swiper{
     width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    font-size: 4em;
+    margin-top: 30px;
+    li{
+      margin-left: 10px;
+    }
   }
 }
 
 .product{
   width: $pcw;
-  margin: 0 auto;
+  margin: 100px auto 0 auto;
   font-family: serif;
-  font-size: 1.5em;
+  font-size: 2em;
   h4{
-    margin-top: 30px;
+    text-shadow:0 2px 2px black;
+  }
+
+  &__art{
+    margin: 50px 0;
+    display: flex;
+    &--card{
+      width: 100%;
+      text-align: center;
+      opacity: 0;
+      transform : translate(0, 100px);
+      transition : all 1500ms;
+      &.scrollin{
+        opacity: 1;
+        transform: translate(0, 0);
+      }
+      a{
+        img{
+          width: 300px;
+        }
+      }
+    }
+
+    &--word{
+      margin-top: 20px;
+      font-size: 0.8em;
+      line-height: 1.5;
+      a{
+        color: white;
+        text-decoration: none;
+
+      }
+    }
   }
 }
